@@ -7,12 +7,13 @@ final class SortTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
         
-        let output = Array(1..<8)
+        let output = Array(1..<10)
         let input = Array(output.reversed())
 
         XCTAssertEqual(bubbleSorted(input), output)
         XCTAssertEqual(selectionSorted(input), output)
-
+        XCTAssertEqual(quickSorted(input), output)
+        XCTAssertEqual(heapSorted(input), output)
     }
 
     static var allTests = [
